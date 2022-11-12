@@ -1,0 +1,26 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon-19.png",
+         "38": "images/icon-38.png"
+      },
+      "default_popup": "chrome/popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "style/content.css" ],
+      "js": [ "script/jquery.js", "script/emoji.js", "script/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Display flag emojis in Chrome",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png"
+   },
+   "manifest_version": 2,
+   "name": "Flagmoji - Flag Emojis for Google Chrome",
+   "options_page": "chrome/options.html",
+   "permissions": [ "storage", "http://*/*", "https://*/*" ],
+   "version": "0.9.1",
+   "web_accessible_resources": [ "images/*" ]
+}

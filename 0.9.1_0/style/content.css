@@ -1,0 +1,18 @@
+.emoji-sizer {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    display: inline-block;
+    color: transparent;
+    line-height: 1em;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: sub
+}
+
+.emoji-inner {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
